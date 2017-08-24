@@ -16,6 +16,7 @@ get_header();
         <section class="product-types">
 
             <h1 class="front-page-subtitle">Shop Stuff</h1>
+            
             <div class="different-product-types">
         <?php
             $terms = get_terms(array(
@@ -74,7 +75,7 @@ get_header();
 
             <h1 class="front-page-subtitle">Latest Adventures</h1>
             <div class="most-recent-adventures">
-
+            
         <?php
 
         $args = array(

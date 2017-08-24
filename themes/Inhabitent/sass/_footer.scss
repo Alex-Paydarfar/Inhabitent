@@ -119,3 +119,16 @@ only screen and (min-resolution: 120dpi) {
     text-align: center;
     text-transform: uppercase
 }
+.contact h3 {
+    color: orange;
+}
+.business-hours h3 {
+    color: orange;
+}
+.business-hours {
+    position: absolute;
+    left: 327px;
+}
+p.footer-social-media {
+    display: none;
+}
