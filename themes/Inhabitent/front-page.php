@@ -80,26 +80,62 @@ get_header();
               <!-- front page photos -->
 
             <div class="my-front-page-photos">
-
+            <style>
+            .my-front-page-photos {
+                width: 1120px;
+                box-sizing: border-box;
+                margin: 0 auto;
+                display: flex}
+                .three-images {
+                    display: flex; width: 50%;
+                }
+                #beach-bonfire {
+                    flex-basis: 50%;
+                }
+                #canoe-girl {
+                    width: 50%;
+                }
+                #mountain-hikers {
+                    width: 25%;
+                }
+                #nighy-sky {
+                    width: 25%;
+                }
+                div#canoe-girl img {
+                width: 100%;
+            }
+            </style>            
              <div id="canoe-girl">      
             <img width="100" height="100" src=<?php echo get_template_directory_uri() . '/images/canoe-girl.jpg'?>>
+            <h3>Getting back to nature in a canoe</h3>
+            <button id="readme">Read more</button>
             </div>
 
+            <div class="three-images">
             <div id="beach-bonfire">
             <img width="100" height="100" src=<?php echo get_template_directory_uri() . '/images/beach-bonfire.jpg'?>>
+            <h3>A night with friends at the beach</h3>
+            <button id="readme">Read more</button>
             </div>
+
+           <div class="two-divs">
 
             <div id="mountain-hikers">
             <img width="100" height="100" src=<?php echo get_template_directory_uri() . '/images/mountain-hikers.jpg'?>>
+            <h3>Taking in the big view at big mountain</h3>
+            <button id="readme">Read more</button>
             </div>
 
             <div id="night-sky">
             <img width="100" height="100" src=<?php echo get_template_directory_uri() . '/images/night-sky.jpg'?>>
+            <h3>Star-gazing at the night sky</h3>
+            <button id="readme">Read more</button>
             </div>
 
             </div>
+            </div>
 
-
+            </div>
 
         <?php
 
