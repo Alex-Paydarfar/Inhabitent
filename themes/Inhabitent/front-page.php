@@ -72,10 +72,19 @@ get_header();
         </section>
 
         <section class="latest-adventures">
-
+        
             <h1 class="front-page-subtitle">Latest Adventures</h1>
             <div class="most-recent-adventures">
-            
+
+
+              <!-- front page photos -->
+
+            <div class="my-front-page-photos">    
+            <img width="640" height="427" src=<?php echo get_template_directory_uri() . '/images/canoe-girl.jpg'?>>
+            </div>
+
+
+
         <?php
 
         $args = array(

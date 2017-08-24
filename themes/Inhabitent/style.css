@@ -1066,8 +1066,7 @@ object {
   height: 100%; }
 
 .most-recent-adventures {
-  height: 70%;
-  background-color: blue; }
+  height: 70%; }
   .most-recent-adventures .recent-adventures {
     padding: 10px; }
   .most-recent-adventures .recent-adventures:first-child {
