@@ -79,8 +79,24 @@ get_header();
 
               <!-- front page photos -->
 
-            <div class="my-front-page-photos">    
-            <img width="640" height="427" src=<?php echo get_template_directory_uri() . '/images/canoe-girl.jpg'?>>
+            <div class="my-front-page-photos">
+
+             <div id="canoe-girl">      
+            <img width="100" height="100" src=<?php echo get_template_directory_uri() . '/images/canoe-girl.jpg'?>>
+            </div>
+
+            <div id="beach-bonfire">
+            <img width="100" height="100" src=<?php echo get_template_directory_uri() . '/images/beach-bonfire.jpg'?>>
+            </div>
+
+            <div id="mountain-hikers">
+            <img width="100" height="100" src=<?php echo get_template_directory_uri() . '/images/mountain-hikers.jpg'?>>
+            </div>
+
+            <div id="night-sky">
+            <img width="100" height="100" src=<?php echo get_template_directory_uri() . '/images/night-sky.jpg'?>>
+            </div>
+
             </div>
 
 
