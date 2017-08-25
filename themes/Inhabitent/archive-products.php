@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive product post types (shop page).
  *
- * @package Inhabitent Theme
+ * @package RED_Starter_Theme
  */
 
 get_header(); ?>
@@ -11,6 +11,8 @@ get_header(); ?>
 		<main id="main" class="shop-site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
+
+		<?php while ( have_posts() ) : the_post(); ?>
 
 			<header class="shop-page-header">
 				<?php the_archive_title( '<h1 class="shop-page-title">', '</h1>' ); ?>
@@ -32,7 +34,7 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<section class ="product-archive-section">
-			<?php while ( have_posts() ) : the_post(); ?>
+		
 			<div class="product-list-entry">
 				<header class="entry-header">
 					<?php if ( has_post_thumbnail() ) : ?>
@@ -45,8 +47,10 @@ get_header(); ?>
 					<span class='entry-price'><?php echo get_post_meta(get_the_ID(), 'price', true); ?></span>
 				</p>
 			</div>
-			<?php endwhile; ?>
+			
 			</section>
+
+			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
 
@@ -58,4 +62,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	
 <?php get_footer(); ?>

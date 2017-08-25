@@ -348,7 +348,6 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
   width: 100%;
-  height: 100%;
   font-size: 16px; }
 
 blockquote, q {
@@ -1536,6 +1535,28 @@ input[type=search]:focus {
 
 p.footer-social-media {
   display: none; }
+
+.contact {
+  text-align: left; }
+
+.contact span {
+  font-size: 21px;
+  letter-spacing: 5px; }
+
+.copyright-div {
+  font-family: Novecento Sans Web,sans-serif;
+  padding: 1.5rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  display: -ms-flexbox;
+  display: flex; }
+
+.credit {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  -ms-flex-direction: row;
+      flex-direction: row; }
 
 /*======================================
   Selectric v1.11.1

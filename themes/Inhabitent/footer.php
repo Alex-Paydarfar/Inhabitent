@@ -54,8 +54,10 @@
 					<div class="footer-logo">
 					<a href="<?php echo home_url() ?>" class="footer-inhabitent-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/inhabitent-logo-text.svg" /> </a>
 					</div>
-					<p class="credit"> Copyright &copy; 2017 Inhabitent</p>
 				</div><!-- .site-info -->
+				<div class="copyright-div">
+				<p class="credit"> Copyright &copy; 2017 Inhabitent</p>
+				</div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

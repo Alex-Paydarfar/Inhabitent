@@ -79,21 +79,24 @@ get_header();
 
               <!-- front page photos -->
 
-            <div class="my-front-page-photos">
+            
             <style>
             .my-front-page-photos {
                 width: 1120px;
                 box-sizing: border-box;
                 margin: 0 auto;
+                align-content: center;
                 display: flex}
                 .three-images {
-                    display: flex; width: 50%;
+                    display: flex; width: 100%;
+                    flex-direction: column;
                 }
                 #beach-bonfire {
                     flex-basis: 50%;
                 }
                 #canoe-girl {
                     width: 50%;
+                    height: 50%;
                 }
                 #mountain-hikers {
                     width: 25%;
@@ -104,7 +107,47 @@ get_header();
                 div#canoe-girl img {
                 width: 100%;
             }
-            </style>            
+            #beach-bonfire {
+                width: 100%;
+            }
+           .two-divs {
+               display: flex;
+               flex-direction: row;
+           }
+           div#canoe-girl img {
+           height: 500px;}
+           div#beach-bonfire img {
+           width: 90%;
+           height: 40%;
+           margin-left: 15px;
+           position: relative;
+           }    
+           #mountain-hikers img {
+           width: 321px;
+           height: 262px;
+           } 
+           .two-divs {
+           display: flex;
+           flex-direction: row;
+           position: absolute;
+           top: 2235px;
+           left: 549px;
+           width: 1100px;
+           }
+           div#night-sky img {
+           width: 330px;
+           height: 262px;
+           }
+           div#night-sky img {
+           margin-left: 15px;
+           }
+           #mountain-hikers {
+           width: 30%;
+           }
+            </style>    
+
+             <div class="my-front-page-photos">
+
              <div id="canoe-girl">      
             <img width="100" height="100" src=<?php echo get_template_directory_uri() . '/images/canoe-girl.jpg'?>>
             <h3>Getting back to nature in a canoe</h3>
@@ -118,7 +161,7 @@ get_header();
             <button id="readme">Read more</button>
             </div>
 
-           <div class="two-divs">
+            <section class="two-divs">
 
             <div id="mountain-hikers">
             <img width="100" height="100" src=<?php echo get_template_directory_uri() . '/images/mountain-hikers.jpg'?>>
@@ -130,8 +173,11 @@ get_header();
             <img width="100" height="100" src=<?php echo get_template_directory_uri() . '/images/night-sky.jpg'?>>
             <h3>Star-gazing at the night sky</h3>
             <button id="readme">Read more</button>
-            </div>
 
+            </section>
+
+            
+            </div>
             </div>
             </div>
 

@@ -132,3 +132,26 @@ only screen and (min-resolution: 120dpi) {
 p.footer-social-media {
     display: none;
 }
+
+.contact {
+    text-align: left;
+}
+
+.contact span {
+    font-size: 21px;
+    letter-spacing: 5px;
+}
+.copyright-div {
+    font-family: Novecento Sans Web,sans-serif;
+    padding: 1.5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+}
+.credit {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    flex-direction: row;
+}
+
